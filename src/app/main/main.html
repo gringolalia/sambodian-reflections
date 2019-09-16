@@ -3,24 +3,31 @@
     <header class="md-whiteframe-4dp">
       <reflexive-navbar creation-date="main.creationDate"></reflexive-navbar>
     </header>
-    <section class="jumbotron">
-      <h1>REFLEXIVE</h1>
-      <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        A Material Theme for the Angular Gulp Generator
-      </p>
-      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
-      <p>
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-      </p>
-      <md-button ng-click="main.toggleRight()" ng-hide="main.isOpenRight()" class="md-primary">
-        Toggle Right SideNav
+
+    <section class="jumbotron" style="min-height: calc(100vh - 65px); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <i class="fas fa-mosque fa-5x"></i>
+      <h1>Samboja</h1>
+        <h2>No Vigésimo Primeiro Século</h2>
+        <i class="fas fa-cogs fa-4x" style="color: white;"></i>
+      <h2 class="lead">
+        Gulpus Angularicus et Materialense
+      </h2>
+
+    <div style="display: flex; flex-direction: row; align-items: center">
+
+      <md-button class="md-raised md-accent" ng-class ="main.classAnimation" ng-click="main.showToastr()">Medical Doctrine</md-button>
+
+      <md-button ng-click="main.toggleRight()" ng-hide="main.isOpenRight()" class="md-raised md-primary">
+        Bebidas </md-button>
+
+      <md-button ng-click="main.toggleLeft()" ng-hide="main.isOpenLeft()" class="md-raised md-warn">
+        Petiscos
       </md-button>
-      <md-button ng-click="main.toggleLeft()" ng-hide="main.isOpenLeft()" class="md-primary">
-        Toggle Left SideNav
-      </md-button>
-    </section>
-    <div class="techs" layout-align="center">
+    </div>
+
+  </section>
+
+    <div id="fungo" class="techs" layout-align="center">
       <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
         <md-card-content>
           <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
@@ -28,14 +35,14 @@
           <p>{{ awesomeThing.description }}</p>
         </md-card-content>
         <div class="md-action-buttons">
-          <md-button ng-href="{{ awesomeThing.url }}">Website</md-button>
+          <md-button ng-href="{{ awesomeThing.url }}">Web Site</md-button>
         </div>
       </md-card>
     </div>
   </md-content>
   <md-sidenav class="md-sidenav-right" md-component-id="right" md-whiteframe="4">
     <md-toolbar class="md-theme-light">
-      <h1 class="md-toolbar-tools">Sidenav Right</h1>
+      <h1 class="md-toolbar-tools">The Rabid Right</h1>
     </md-toolbar>
     <md-content ng-controller="MainController" layout-padding>
       <form>
@@ -45,17 +52,17 @@
         </md-input-container>
       </form>
       <md-button ng-click="main.closeRight()" class="md-primary">
-        Close Sidenav Right
+        Close The Drawer
       </md-button>
     </md-content>
   </md-sidenav>
   <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
     <md-toolbar class="md-theme-indigo">
-      <h1 class="md-toolbar-tools">Sidenav Left</h1>
+      <h1 class="md-toolbar-tools">The Lurid Left</h1>
     </md-toolbar>
     <md-content layout-padding ng-controller="MainController">
       <p>
-        Left Navigation Panel.
+        Navegar é Preciso
       </p>
       <md-button ng-click="main.closeLeft()" class="md-primary">
         Close Sidenav Left
